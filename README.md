@@ -95,11 +95,13 @@ In the end, programming is just a skill. It improves with training - and this im
 ### Author Guidelines
   1. **Communicate**. Give your reviewers context on your change. Let them know why you are making those changes and link to a ticket for additional context. Set a timeline with your reviewers so they know how quickly you need feedback.
 
-  2. **Chat it up**. Sometimes the most efficient way to resolve a disagreement is a direct conversation. If you find yourself having long email discussions on your code reviews, meet with your reviewers to resolve any disagreements in a timely manner.
+  2. **Chat it up**. Sometimes the most efficient way to resolve a disagreement is a direct conversation. If you find yourself having long email discussions on your code reviews, meet with your reviewers to resolve any disagreements in a timely manner. Or if you disagree or want to clarify a comment on your pull request, don't hesitate to have a chat with your reviewer.
+  
+  3. **Be Proactive and Learn**. When you get your code review back, learn from the feedback and be proactive in applying them. If you find a change request on one file, try to find repeated instances in your code and correct them all.
 
-  3. **Smaller is Better**. Keep your code reviews small so that you can iterate more quickly and accurately. In general, smaller code changes are also easier to test and verify as stable.
+  4. **Smaller is Better**. Keep your code reviews small so that you can iterate more quickly and accurately. In general, smaller code changes are also easier to test and verify as stable.
 
-  4. **It Works**. Before submitting for review, be sure to check for errors. Catching these issues early will save both you and the reviewer's time.
+  5. **It Works**. Before submitting for review, be sure to check for errors. Catching these issues early will save both you and the reviewer's time.
 
 ### Reviewer Guidelines
 
