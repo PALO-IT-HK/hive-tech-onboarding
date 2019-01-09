@@ -2,11 +2,15 @@
 New developer onboarding
 
 
-## Table of contents
+## Table of Contents
 * [Git](#git)
   * [Commit Messages](#commit-messages)
     * [Background](#background)
     * [Guidelines](#guidelines)
+* [Code Review](#code-review)
+  * [Attitudes and Mindset](#attitudes-and-mindset)
+  * [Author Guidelines](#author-guidelines)
+  * [Reviewer Guidelines](#reviewer-guidelines)
 
 ## Git
 ### Commit Messages
@@ -76,3 +80,39 @@ Good commit messages in PALO IT:
   ```
 
 Though these standards exist, they serve more as guidelines which aims to have developers form a habit of being concise and consistent.
+
+## Code Review
+### Attitudes and Mindset
+
+Code reviews are valuable and crucial to being a high-functioning development organization. It results in higher quality code that is more broadly understood. However, code reviews can come to nothing or harm the interpersonal relations when they are done wrong. Hence, it’s important to pay attention to the human aspects of code reviews.
+
+Humans make mistakes. That’s normal. As long as software is written by humans, it will contain mistakes. This doesn’t mean that you should work carelessly. But this mindset will take away the fear of mistakes and create an atmosphere where making mistakes is accepted on which is important for feedback during a code review.
+
+Be humble. Mind that everybody’s code can be improved and admitting mistakes shows that you are really professional and honest. You are not your code. Criticism on your code is not a criticism on you as a human. Don’t connect your self-worth with the code you write. You are still a valuable team member even if there are some flaws in your code.
+
+In the end, programming is just a skill. It improves with training - and this improvement never stops.
+
+### Author Guidelines
+  1. **Communicate**. Give your reviewers context on your change. Let them know why you are making those changes and link to a ticket for additional context. Set a timeline with your reviewers so they know how quickly you need feedback.
+
+  2. **Chat it up**. Sometimes the most efficient way to resolve a disagreement is a direct conversation. If you find yourself having long email discussions on your code reviews, meet with your reviewers to resolve any disagreements in a timely manner.
+
+  3. **Smaller is Better**. Keep your code reviews small so that you can iterate more quickly and accurately. In general, smaller code changes are also easier to test and verify as stable.
+
+  4. **It Works**. Before submitting for review, be sure to check for errors. Catching these issues early will save both you and the reviewer's time.
+
+### Reviewer Guidelines
+
+  1. **You are responsible for the code you review**. You are equally as responsible for the code shipped as the person who wrote the code. Make sure that the code is **working** and **solves the intended problem**.
+  
+  2. **You can always ask for help**. If you’re not confident that the code meets the agreed standards, ask a teammate to help complete the code review.
+
+  3. **Time is of the Essence**. The faster you can return a code review to the submitter, the better. Try to review and respond within 24 hours to maintain project momentum. This is more practical with smaller code reviews.
+
+  4. **Review for efficiency and maintainability**. Think carefully about the code. You should be able to understand each piece and how they all fit together. Confirm that the logic of each component is: readable, maintainable; **not** unused or over-engineered.
+
+### Communication is Key
+
+Whether you are reviewing code or having your code reviewed, communication is critical and both parties need to address that feedback is a suggestion and open for discussion. This may require some compromises. That said, as a reviewer, you should not approve code if you’re unsatisfied with the mitigation or without a plan to mitigate an open issue.
+
+Remember your job as a reviewer is to foster discussion so be sure to encourage open communication.
