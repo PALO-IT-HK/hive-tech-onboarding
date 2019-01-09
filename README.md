@@ -1,6 +1,13 @@
 # Tech Hive Onboarding
 New developer onboarding
 
+
+## Table of contents
+* [Git](#git)
+  * [Commit Messages](#commit-messages)
+    * [Background](#background)
+    * [Guidelines](#guidelines)
+
 ## Git
 ### Commit Messages
 #### Background
