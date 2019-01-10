@@ -7,6 +7,10 @@ New developer onboarding
   * [Commit Messages](#commit-messages)
     * [Background](#background)
     * [Guidelines](#guidelines)
+* [Commenting Code](#commenting-code)
+    * [About self-documenting code](#about-self-documenting-code)
+    * [How to use comments](#how-to-use-comments)
+    * [Side note](#side-note)
 * [Code Review](#code-review)
   * [Attitudes and Mindset](#attitudes-and-mindset)
   * [Author Guidelines](#author-guidelines)
@@ -80,6 +84,46 @@ Good commit messages in PALO IT:
   ```
 
 Though these standards exist, they serve more as guidelines which aims to have developers form a habit of being concise and consistent.
+
+## Commenting Code
+### About self-documenting code
+
+Self-documenting code is preferred. This can be achieved by applying certain practices:
+
+- Uniformity of naming conventions
+- Use human-readable and meaningful variable/method/class names, such as `getUsersAge`
+- Have a clear and clean folder structure
+- Keep your functions/methods short
+- Have each class and method do only one thing
+
+These help a human reader easily understand the algorithm used. They also reduce the need for users and developers to consult secondary documentation sources such as code comments. Of course, as a matter of practice, it is always worth double checking you write is really understandable by others.
+
+Comments in clean code are almost never needed. They are not very useful in the long run because usually comments are not updated alongside corresponding code changes. Over time, they become misleading and you have no idea whether it is relevant anymore for the current version of the code.
+
+### How to use comments 
+
+Comments have a role, but you should use them carefully. Developers should know their tools and how to use them. Therefore, code like this on which have been seen in the real world provide no value:
+
+```
+// if option is set to true, do something
+if (option) {
+  doSomething();
+}
+```
+
+Pragmatically speaking, sometimes, we have to write comments to document the why. They should indicate the conditions why the code has been written in a certain way, limitations imposed by requirements or externalities, and other gotchas. They contain information that can't be contained within the code itself.
+
+For example, you are working in a corporation where a good open-source dependency exists but restricted by security and compliance:
+
+```
+// lodash is restricted by security team because of vulnerability issues
+
+codeThatLodashCanEasilySolve();
+```
+
+### Side note
+
+Unit tests are almost always a better way of documentation than code comments: your unit tests do document your understanding, assumptions and reasoning about the code quite efficiently, moreover you are automatically reminded to keep them in sync with the code whenever you break them (provided you run them with your build).
 
 ## Code Review
 ### Attitudes and Mindset
